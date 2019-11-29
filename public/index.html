@@ -23,23 +23,53 @@
 				height: '100%',
 				width: '100%',
 				events: {
-	        'onReady': onPlayerReady
+	        'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
 	      }
 			});
 		}
 
 		function onPlayerReady(e) {
 			player.loadPlaylist([
-				'm7atGkba-Z8'
+				'JI7MLGmagtk',
+				'f1jMRBnztU4',
+				'A0FZIwabctw',
+				'zK6FSK98asc',
+				'tdUX3ypDVwI',
+				'H7Uyfqi_TE8',
+				'zu7WJD8vpAQ',
+				'lsO6gwLjhZE',
+				'8P8UKBAOfGo',
+				'oia53xOLDmw'
 			]);
 		// lightTimestamp: '28:30',
 			e.target.playVideo();
 			player.unMute();
+
 				// 'tP0VoGMRmrQ',
 				// 'yIaxfrEcFaw',
 				// '1OEu9C51K2A',
 				// 'sWgDk-o-6ZE',
 				// 'p-MNSLsjjdo'
+		}
+
+		function onPlayerStateChange(e) {
+			console.log('e', e)
+			if (e.target.getPlaylistIndex() === 4 && e.target.getCurrentTime() >= 2355) {
+				return;
+			} else if (e.target.getPlaylistIndex() === 4) {
+					seekplayer(2355);
+			}
+
+			if (e.target.getPlaylistIndex() === 6 && e.target.getCurrentTime() >= 4440) {
+				return;
+			} else if (e.target.getPlaylistIndex() === 6) {
+					seekplayer(4440);
+			}
+		}
+
+		function seekplayer(time) {
+			player.seekTo(time);
 		}
 	</script>
 	<script src="/js/index.js"></script>
