@@ -137,7 +137,7 @@ class Home extends Component {
 
 		return (
 			<section id="main" style={background}>
-				<MusicPlayer />
+				{/*<MusicPlayer />*/}
 			</section>
 		);
 	}
