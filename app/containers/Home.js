@@ -138,6 +138,18 @@ class Home extends Component {
 		return (
 			<section id="main" style={background}>
 				{/*<MusicPlayer />*/}
+				<a 
+					href="https://physics.stackexchange.com/questions/79537/how-can-light-carry-data-if-light-has-no-mass-and-data-has-mass" 
+					target="_blank" style={{fontSize: '20px'}}>How light carries data</a>
+					<br/>
+					<br/>
+				<a href="https://blog.commscopetraining.com/how-do-wireless-networks-transmit-data/" target="_blank" style={{fontSize: '20px'}}>How wifi carriers data</a>
+				<br/>
+				<br/>
+				<a href="https://www.scientificamerican.com/article/how-does-wi-fi-work/" target="_blank" style={{fontSize: '20px'}}>How does wifi work</a>
+				<br/>
+				<br/>
+				<a href="https://www.nasa.gov/pdf/583093main_Earth_Calling.pdf" target="_blank" style={{fontSize: '20px'}}>Nasa</a>
 			</section>
 		);
 	}
