@@ -138,7 +138,7 @@ class Home extends Component {
 		return (
 			<section id="main" style={background}>
 				{/*<MusicPlayer />*/}
-				<iframe src="https://kpfa.org/player/?audio=319427" width="100%" height="100%" frameborder="0"></iframe>
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/p02DgHeGdyI?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</section>
 		);
 	}
