@@ -137,8 +137,8 @@ class Home extends Component {
 
 		return (
 			<section id="main" style={background}>
-				{/*<MusicPlayer />*/}
-				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/p02DgHeGdyI?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<MusicPlayer />
+				
 			</section>
 		);
 	}

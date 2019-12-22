@@ -17,32 +17,33 @@
   	<div id="root"></div>
   	<div id="player"></div>
 	<script type="text/javascript">
-		// var player;
-		// function onYouTubeIframeAPIReady() {
-		// 	player = new YT.Player('player', {
-		// 		height: '100%',
-		// 		width: '100%',
-		// 		events: {
-	 //        'onReady': onPlayerReady
-  //         // 'onStateChange': onPlayerStateChange
-	 //      }
-		// 	});
-		// }
+		var player;
+		function onYouTubeIframeAPIReady() {
+			player = new YT.Player('player', {
+				height: '100%',
+				width: '100%',
+				events: {
+	        'onReady': onPlayerReady
+          // 'onStateChange': onPlayerStateChange
+	      }
+			});
+		}
 
-		// function onPlayerReady(e) {
-		// 	player.loadPlaylist([
-		// 		'-aoAGdYXp_4'
-		// 	]);
+		function onPlayerReady(e) {
+			player.loadPlaylist([
+				'h9MS9i-CdfY',
+				'IHNzOHi8sJs'
+			]);
 		// // lightTimestamp: '28:30',
-		// 	e.target.playVideo();
-		// 	player.unMute();
+			e.target.playVideo();
+			player.unMute();
 
 		// 		// 'tP0VoGMRmrQ',
 		// 		// 'yIaxfrEcFaw',
 		// 		// '1OEu9C51K2A',
 		// 		// 'sWgDk-o-6ZE',
 		// 		// 'p-MNSLsjjdo'
-		// }
+		}
 
 		// function onPlayerStateChange(e) {
 		// 	console.log('e', e)
